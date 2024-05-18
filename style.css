@@ -1,0 +1,6 @@
+.dns-record {
+  cursor: pointer;
+}
+.show-dot-before::before {
+  content: '.';
+}
