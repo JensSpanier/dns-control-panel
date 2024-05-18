@@ -1,6 +1,6 @@
 # DNS Control Panel
 
-This control panel is designed to update zones via AXFR ([RFC 5936](https://datatracker.ietf.org/doc/html/rfc5936)) and nsupdate ([RFC 2136](<(https://datatracker.ietf.org/doc/html/rfc2136)>)).
+This control panel is designed to update zones via AXFR ([RFC 5936](https://datatracker.ietf.org/doc/html/rfc5936)) and nsupdate ([RFC 2136](https://datatracker.ietf.org/doc/html/rfc2136)).
 
 ## Getting started
 
