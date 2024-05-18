@@ -17,7 +17,7 @@ $this->helperService->printContentStart();
         <input type="password" class="form-control" id="password" name="password">
     </div>
     <button type="submit" class="btn btn-primary">
-        <i class="fa-solid fa-right-to-bracket"></i> Login
+        <i class="fa-solid fa-right-to-bracket"></i> Log in
     </button>
 </form>
 

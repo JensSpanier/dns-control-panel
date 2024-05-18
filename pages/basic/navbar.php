@@ -44,7 +44,7 @@ $currentZone = $_GET['_zone'] ?? '';
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li>
                                 <a class="dropdown-item" href="?_page=logout">
-                                    <i class="fa-solid fa-right-from-bracket"></i> Abmelden
+                                    <i class="fa-solid fa-right-from-bracket"></i> Log out
                                 </a>
                             </li>
                         </ul>
