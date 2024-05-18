@@ -7,7 +7,7 @@ $currentZone = $_GET['_zone'] ?? '';
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
-        <a class="navbar-brand" href="/?_page=dns">
+        <a class="navbar-brand" href="?_page=dns">
             <i class="fa-solid fa-globe text-primary"></i> DNS Control
         </a>
         <?php if ($isLoggedIn) : ?>
@@ -43,7 +43,7 @@ $currentZone = $_GET['_zone'] ?? '';
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li>
-                                <a class="dropdown-item" href="/?_page=logout">
+                                <a class="dropdown-item" href="?_page=logout">
                                     <i class="fa-solid fa-right-from-bracket"></i> Abmelden
                                 </a>
                             </li>
