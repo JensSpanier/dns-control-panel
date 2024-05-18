@@ -15,6 +15,6 @@ class LogoutPage
     private function processGet()
     {
         $this->authService->logout();
-        header('Location: /?_page=login');
+        header('Location: ?_page=login');
     }
 }

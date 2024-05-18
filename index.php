@@ -22,7 +22,7 @@ try {
     $userService = new UserService($configService, $authService);
 
     if (empty($_GET['_page'])) {
-        return header('Location: /?_page=dns');
+        return header('Location: ?_page=dns');
     }
 
     $page = $_GET['_page'];
@@ -35,7 +35,7 @@ try {
     }
 
     if (!$authService->isLoggedIn()) {
-        return header('Location: /?_page=login&_redirect=' . urlencode($_SERVER['REQUEST_URI']));
+        return header('Location: ?_page=login&_redirect=' . urlencode($_SERVER['REQUEST_URI']));
     }
 
     if (isset($_GET['_redirect'])) {
