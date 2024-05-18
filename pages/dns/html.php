@@ -26,13 +26,15 @@ $this->helperService->printContentStart();
             <li class="list-group-item list-group-item-action dns-record" data-type="<?= $record['type'] ?>" data-ttl="<?= $record['ttl'] ?>" data-host="<?= htmlspecialchars(substr($record['host'], 0, - (strlen($zone) + 1))) ?>" data-data="<?= htmlspecialchars($record['data']) ?>">
                 <div class="d-flex w-100 justify-content-between">
                     <p class="mb-0">
-                        <kbd><?= $record['type'] ?></kbd>
                         <?= htmlspecialchars($record['host']) ?>
                     </p>
                     <p class="text-body-secondary small mb-0"><?= $record['ttl'] ?></p>
                 </div>
-                <p class="mb-0 text-truncate font-monospace small text-body-secondary">
-                    <?= htmlspecialchars($record['data']) ?>
+                <p class="mb-0 small text-truncate">
+                    <kbd><?= $record['type'] ?></kbd>
+                    <span class="font-monospace text-body-secondary">
+                        <?= htmlspecialchars($record['data']) ?>
+                    </span>
                 </p>
             </li>
         <?php endforeach; ?>
