@@ -71,6 +71,7 @@ class DnsPage
     private function processGet()
     {
         $username = $this->userService->getUsername();
+        $defaultTtl = $this->userService->getDefaultTtl();
         $zones = $this->userZones;
         $zone = $this->zone;
         $recordTypes = $this->configService->getConfig('recordTypes');

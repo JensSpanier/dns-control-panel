@@ -25,6 +25,7 @@
 
   const dnsRecordModal = new bootstrap.Modal(dom.dnsRecordModal);
   const confirmDeleteModal = new bootstrap.Modal(dom.confirmDeleteModal);
+  const defaultTtl = dom.newTtl.value;
 
   dom.newHost.addEventListener('input', checkShowDotBefore);
   dom.newType.addEventListener('change', updateDataPlaceholder);
@@ -53,7 +54,7 @@
     fillAndShowModal('add', {
       host: '',
       type: '',
-      ttl: '',
+      ttl: defaultTtl,
       data: '',
     });
   });

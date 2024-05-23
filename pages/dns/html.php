@@ -69,7 +69,7 @@ $this->helperService->printContentStart();
                                 <option><?= $recordType ?></option>
                             <?php endforeach; ?>
                         </select>
-                        <input type="number" required class="form-control border-bottom-0 rounded-0" name="newTtl" id="newTtl" placeholder="TTL" min="0">
+                        <input type="number" required class="form-control border-bottom-0 rounded-0" name="newTtl" id="newTtl" placeholder="TTL" min="0" value="<?= $defaultTtl ?>">
                     </div>
                     <input type="hidden" name="currentData" id="currentData">
                     <input type="text" required class="form-control rounded-top-0" name="newData" id="newData">
@@ -115,6 +115,6 @@ $this->helperService->printContentStart();
 
 <?php $this->helperService->printContentEnd(); ?>
 
-<script src="./dns.js?v=1"></script>
+<script src="./dns.js?v=2"></script>
 
 <?php $this->helperService->printEnd(); ?>

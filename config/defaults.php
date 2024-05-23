@@ -21,6 +21,8 @@ $config['user'] = [
     //     'zones' => [
     //         'example.com',
     //     ],
+    //     // Default TTL when creating new records (optional)
+    //     'defaultTtl' => 3600,
     // ],
 ];
 
